@@ -63,6 +63,6 @@ echo --- Start Job ---
 # run pipeline
 java -jar -Dconfig.file=backends/backend.conf \
 -Dbackend.providers.Local.config.concurrent-job-limit=${NUM_CONCURRENT_TASK} \
-$PBS_O_WORKDIR/cromwell-34.jar run atac.wdl -i ${INPUT} -m ${PIPELINE_METADATA}
+$PBS_O_WORKDIR/cromwell-38.jar run atac.wdl -i ${INPUT} -m ${PIPELINE_METADATA}
 echo ---- End Job ----
 date
